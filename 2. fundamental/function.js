@@ -34,3 +34,5 @@ todo.delete = function() {
 todo.add();
 todo.edit(34);
 todo.delete();
+
+console.log('hello how are you??');

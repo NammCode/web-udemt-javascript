@@ -24,7 +24,7 @@ cars.forEach(function(car){
   console.log(car);
 });
 
-// MAP  
+// MAP, RETURN ARRAY  
 const users = [
   {id: 1, name: 'John'},
   {id: 2, name: 'Sara'},

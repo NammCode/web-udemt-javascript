@@ -1,0 +1,75 @@
+INDEX.HTML
+
+.container
+  .row
+    .col.s12
+      #main.card
+        .card-content
+          span.card-title
+          .row
+            form#task-form
+              .input-field.col.s12
+                input (text-task-task)
+                label (for: task)
+              input.btn (submit)
+
+
+        .card-action
+          h5#task-title
+          .input-filed.col.s12
+            input (text-filter-filter)
+            label (for: filter)
+          ul.collection 
+          a.clear-tasks.btn.black
+
+
+APP.JS
+
+const form, taskList, clearBtn, filter, taskInput
+
+loadEventListeners(){ 
+  'DOMContentLoaded', getTasks
+  addTask
+  removeTask 
+  clearAllTask
+  filterTasks
+};
+
+getTasks(){
+  same with storeTaskInLocalStorage
+  same with addTask
+}
+
+addTask(){
+  alert if don't write anything
+  append li(have delete link) element to ul
+  storeTaskInLocalStorage();
+  clear input
+}
+
+deleteItem(){
+  using event delegation (confirm)
+  removeTaskFromLocalStorage();    
+}
+
+clearAllTask(){
+  loop through taskList
+  remove li of taskList
+  clearTasksFromLocalStorage();
+}
+
+filterTasks(){
+  loop thourgh list of li to check 
+  check filter with item(task.firstChild.textContent) 
+  != -1 meanning no match
+  display block or none
+}
+
+storeTaskInLocalStorage(){
+  same with localStoreage jssandbox
+}
+
+removeTaskFromLocalStorage(){
+  get tasks
+  tasks.slice()
+}
